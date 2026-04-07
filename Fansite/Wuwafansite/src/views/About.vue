@@ -1,0 +1,21 @@
+<template>
+  <div class="about">
+  </div>
+</template>
+
+<style scoped>
+.about {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #666;
+  font-size: 1.1rem;
+}
+</style>
