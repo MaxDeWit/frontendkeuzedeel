@@ -19,7 +19,7 @@
   gap: 2rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .navbar a {
