@@ -31,7 +31,7 @@
 .navbar .logo {
   font-weight: bold;
   font-size: 2.5rem;
-  color: white;
+  color: rgb(23, 23, 23);
   padding-left: 1rem;
   flex-shrink: 0;
 }
@@ -39,13 +39,13 @@
 .navbar .navitems {
   display: flex;
   gap: 1rem;
-  padding-right: 1rem;
+  padding-right: 3rem;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
 .navbar a {
-  color: white;
+  color: rgb(79, 77, 77);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;

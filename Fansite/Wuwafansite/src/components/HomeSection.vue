@@ -1,13 +1,7 @@
 <template>
   <section id="home" class="section">
-    <h1>Welcome</h1>
-    <p>Dit is de home pagina.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, sed maiores nulla libero omnis sapiente molestias? Expedita, quisquam vero. Quae quasi ipsam illum quibusdam! Explicabo repellendus neque placeat maiores blanditiis animi, nobis nisi magnam consectetur voluptatum debitis quaerat incidunt illo minima molestias ex. Tempore maxime ex optio deserunt consequatur dolor.</p>
-    <br />
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis debitis iusto placeat fuga aspernatur reiciendis porro sed aliquam, culpa officiis libero doloribus quisquam qui at delectus harum necessitatibus possimus asperiores quis eos, commodi nulla inventore. Corporis assumenda maiores non quam iusto perspiciatis neque earum exercitationem eius libero, facilis vel voluptates.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, sed maiores nulla libero omnis sapiente molestias? Expedita, quisquam vero. Quae quasi ipsam illum quibusdam! Explicabo repellendus neque placeat maiores blanditiis animi, nobis nisi magnam consectetur voluptatum debitis quaerat incidunt illo minima molestias ex. Tempore maxime ex optio deserunt consequatur dolor.</p>
-    <br />
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis debitis iusto placeat fuga aspernatur reiciendis porro sed aliquam, culpa officiis libero doloribus quisquam qui at delectus harum necessitatibus possimus asperiores quis eos, commodi nulla inventore. Corporis assumenda maiores non quam iusto perspiciatis neque earum exercitationem eius libero, facilis vel voluptates.</p>
+    <h1>Welcome to Wuthering Waves</h1>
+    <h2>Explore the world, characters and read the latest news</h2>
   </section>
 </template>
 
@@ -15,11 +9,12 @@
 .section {
   padding: 3rem 2rem;
   border-bottom: 1px solid #eee;
-  background-color: #cb0d0d;
+  background-color: #403e3e;
   width: 100%;
   max-width: 100%;
   border-radius: 0 0 18px 18px;
   box-sizing: border-box;
+  height: 300px;
 }
 
 h1 {
@@ -28,7 +23,7 @@ h1 {
   color: #ffffff;
 }
 
-p {
+h2 {
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -38,6 +33,7 @@ p {
   .section {
     padding: 2rem 1rem;
     border-radius: 0 0 12px 12px;
+    height: 200px;
   }
 
   h1 {
@@ -45,7 +41,7 @@ p {
     margin-bottom: 0.8rem;
   }
 
-  p {
+  h2 {
     font-size: 1rem;
   }
 }
