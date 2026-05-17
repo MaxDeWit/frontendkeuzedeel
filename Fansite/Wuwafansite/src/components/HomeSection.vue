@@ -1,63 +1,84 @@
 <template>
   <section id="home" class="section">
-    <h1>Welcome to Wuthering Waves</h1>
-    <h2>Explore the world, characters and read the latest news</h2>
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active slide-1">
+          <h1>Welcome to Wuthering Waves</h1>
+          <button class="btn btn-primary mt-5">Take me there</button>
+        </div>
+        <div class="carousel-item slide-2">
+          <h1>Meet the Characters</h1>
+          <button a href="#characters" class="btn btn-primary mt-5">Take me there</button>
+        </div>
+        <div class="carousel-item slide-3">
+          <h1>Explore Regions</h1>
+          <button a href="#regions" class="btn btn-primary mt-5">Take me there</button>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </section>
 </template>
 
 <style scoped>
 .section {
-  padding: 3rem 2rem;
-  border-bottom: 1px solid #eee;
-  background-color: #403e3e;
-  width: 100%;
-  max-width: 100%;
-  border-radius: 0 0 18px 18px;
-  box-sizing: border-box;
-  height: 300px;
+  padding: 0;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
+.carousel-inner {
+  min-height: 320px;
+  overflow: hidden;
 }
 
-h2 {
-  color: #ffffff;
-  font-size: 1.1rem;
-  line-height: 1.6;
+.carousel-item {
+  min-height: 320px;
 }
+
+.carousel-item h1 {
+  text-align: center;
+}
+
+.slide-1 {
+  background-color: rgb(53, 53, 54);
+  color: white;
+  width: 120vh;
+}
+
+.slide-2 {
+  background-color: rgb(53, 53, 54);
+  color: white;
+  width: 120vh;
+}
+
+.slide-3 {
+  background-color: rgb(53, 53, 54);
+  color: white;
+  width: 120vh;
+}
+
 
 @media (max-width: 768px) {
-  .section {
-    padding: 2rem 1rem;
-    border-radius: 0 0 12px 12px;
-    height: 200px;
+  .carousel-item {
+    height: 220px;
   }
 
-  h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.8rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .section {
-    padding: 1.5rem 1rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    font-size: 0.95rem;
+  .carousel-caption {
+    min-height: 220px;
   }
 }
 </style>
