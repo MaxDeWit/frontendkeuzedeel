@@ -1,9 +1,22 @@
 <script setup>
+import { ref } from 'vue'
 import CharacterCard from '/src/components/CharacterCard.vue'
 
 import mrover from '/src/assets/CharacterImages/mrover.png'
 import frover from '/src/assets/CharacterImages/frover.png'
 import chisa from '/src/assets/CharacterImages/Chisa.png'
+import yinlin from '/src/assets/CharacterImages/Yinlin.png'
+import calcharo from '/src/assets/CharacterImages/calcharo.png'
+import changli from '/src/assets/CharacterImages/changli.png'
+
+const characters = ref([
+  { name: "Rover (Male)", description: "The male version of the main protagonist.", image: mrover },
+  { name: "Rover (Female)", description: "The female version of the main protagonist.", image: frover },
+  { name: "Chisa", description: "A conscientious student from the Startorch Academy.", image: chisa },
+  { name: "Yinlin", description: "Once an outstanding Patroller who was suspended from her duties at the Public Security Bureau, Yinlin now pursues hidden evils in secrecy.", image: yinlin },
+  { name: "Calcharo", description: "He is a former Exile from the New Federation's Lawless Zone and the leader of the Ghost Hounds.", image: calcharo },
+  { name: "Changli", description: "She is the Former Secretary-General of the Central Secretariat in Mingting, the capital, and now serves as Counselor to Jinzhou Magistrate, Jinhsi. Having flourished from an unforgiving childhood, she now stands as a calculated, knowledgeable, and mysterious official and strategist with a keen eye for both political and civilian affairs.", image: changli },
+])
 </script>
 
 <template>
@@ -13,11 +26,13 @@ import chisa from '/src/assets/CharacterImages/Chisa.png'
     </div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
 
-      <CharacterCard name="Rover" description="The male version of the main protagonist." :image="mrover" />
-
-      <CharacterCard name="Rover" description="The female version of the main protagonist." :image="frover" />
-
-      <CharacterCard name="Chisa" description="A conscientious student from the Startorch Academy." :image="chisa" />
+      <CharacterCard 
+        v-for="character in characters" 
+        :key="character.name"
+        :name="character.name" 
+        :description="character.description" 
+        :image="character.image" 
+      />
 
     </div>
   </section>

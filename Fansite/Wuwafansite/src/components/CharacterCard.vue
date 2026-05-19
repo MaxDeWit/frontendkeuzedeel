@@ -46,6 +46,7 @@ defineProps({
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 350px;
 
   transition: 0.3s;
 }
@@ -71,5 +72,12 @@ defineProps({
 
 .frame-text {
   color: #555;
+  height: 4rem;
+  overflow-y: auto;
+}
+
+.btn {
+  margin-top: auto;
+  margin-bottom: 1rem;
 }
 </style>
