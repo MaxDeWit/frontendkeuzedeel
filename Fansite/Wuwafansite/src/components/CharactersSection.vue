@@ -1,8 +1,19 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import CharacterCard from '/src/components/CharacterCard.vue'
 
 import CharacterSummary from './CharacterSummary.json'
+
+const visibleCount = ref(6)
+const visibleCharacters = computed(() => CharacterSummary.slice(0, visibleCount.value))
+
+const showMore = () => {
+  visibleCount.value += 6
+}
+
+const showLess = () => {
+  visibleCount.value = 6
+}
 </script>
 
 <template>
@@ -13,13 +24,21 @@ import CharacterSummary from './CharacterSummary.json'
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
 
       <CharacterCard 
-        v-for="character in CharacterSummary" 
+        v-for="character in visibleCharacters" 
         :key="character.name"
         :name="character.name" 
         :description="character.description" 
         :image="`/src/assets/CharacterImages/${character.image}.png`" 
       />
 
+    </div>
+    <div class="see-more-container">
+      <button v-if="visibleCount < CharacterSummary.length" class="btn btn-primary mt-4" @click="showMore">
+        See More Characters
+      </button>
+      <button v-if="visibleCount > 6" class="btn btn-outline-primary mt-4 ms-2" @click="showLess">
+        Show Less
+      </button>
     </div>
   </section>
 </template>
@@ -44,6 +63,11 @@ p {
   font-size: 1.05rem;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+.see-more-container {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
