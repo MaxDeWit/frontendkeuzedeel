@@ -7,10 +7,13 @@ import AboutSection from '../components/AboutSection.vue'
 
 <template>
   <div class="home">
+    <header>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <HomeSection />
     <CharactersSection />
     <RegionsSection />
     <AboutSection />
+    </header>
   </div>
 </template>
 

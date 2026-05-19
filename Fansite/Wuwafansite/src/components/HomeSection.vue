@@ -43,38 +43,24 @@
 .carousel-inner {
   min-height: 320px;
   overflow: hidden;
+  background-color: rgb(53, 53, 54);
 }
 
 .carousel-item {
   min-height: 320px;
+  background-color: rgb(53, 53, 54);
+  color: white;
+  width: 155vh;
 }
 
 .carousel-item h1 {
   text-align: center;
 }
 
-.slide-1 {
-  background-color: rgb(53, 53, 54);
-  color: white;
-  width: 120vh;
-}
-
-.slide-2 {
-  background-color: rgb(53, 53, 54);
-  color: white;
-  width: 120vh;
-}
-
-.slide-3 {
-  background-color: rgb(53, 53, 54);
-  color: white;
-  width: 120vh;
-}
-
-
 @media (max-width: 768px) {
   .carousel-item {
     height: 220px;
+    width: 46vh;
   }
 
   .carousel-caption {
