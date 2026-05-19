@@ -44,13 +44,13 @@
   min-height: 320px;
   overflow: hidden;
   background-color: rgb(53, 53, 54);
+  border-radius: 0 0 20px 20px;
 }
 
 .carousel-item {
   min-height: 320px;
   background-color: rgb(53, 53, 54);
   color: white;
-  width: 155vh;
 }
 
 .carousel-item h1 {
@@ -60,7 +60,6 @@
 @media (max-width: 768px) {
   .carousel-item {
     height: 220px;
-    width: 46vh;
   }
 
   .carousel-caption {
