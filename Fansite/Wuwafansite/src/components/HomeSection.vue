@@ -15,11 +15,11 @@
         </div>
         <div class="carousel-item slide-2">
           <h1>Meet the Characters</h1>
-          <button a href="#characters" class="btn btn-primary mt-5">Take me there</button>
+          <a href="#characters" class="btn btn-primary mt-5">Take me there</a>
         </div>
         <div class="carousel-item slide-3">
           <h1>Explore Regions</h1>
-          <button a href="#regions" class="btn btn-primary mt-5">Take me there</button>
+          <a href="#regions" class="btn btn-primary mt-5">Take me there</a>
         </div>
       </div>
 
