@@ -7,13 +7,11 @@ import CharacterSummary from './CharacterSummary.json'
 const visibleCount = ref(6)
 const visibleCharacters = computed(() => CharacterSummary.slice(0, visibleCount.value))
 
-const showMore = () => {
-  visibleCount.value += 6
-}
+const showMore = () => visibleCount.value += 6;
 
-const showLess = () => {
-  visibleCount.value = 6
-}
+
+const showLess = () => visibleCount.value = 6;
+
 </script>
 
 <template>

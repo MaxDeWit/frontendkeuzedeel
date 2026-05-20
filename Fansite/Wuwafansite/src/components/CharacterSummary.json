@@ -1,10 +1,67 @@
 [
-  { "name": "Rover (Male)", "description": "The male version of the main protagonist.", "image": "mrover" },
-  { "name": "Rover (Female)", "description": "The female version of the main protagonist.", "image": "frover" },
-  { "name": "Chisa", "description": "A conscientious student from the Startorch Academy.", "image": "chisa" },
-  { "name": "Yinlin", "description": "Once an outstanding Patroller who was suspended from her duties at the Public Security Bureau, Yinlin now pursues hidden evils in secrecy.", "image": "yinlin" },
-  { "name": "Calcharo", "description": "He is a former Exile from the New Federation's Lawless Zone and the leader of the Ghost Hounds.", "image": "calcharo" },
-  { "name": "Changli", "description": "She is the Former Secretary-General of the Central Secretariat in Mingting, the capital, and now serves as Counselor to Jinzhou Magistrate, Jinhsi. Having flourished from an unforgiving childhood, she now stands as a calculated, knowledgeable, and mysterious official and strategist with a keen eye for both political and civilian affairs.", "image": "changli" },
-  { "name": "Jinhsi", "description": "She is the young Magistrate of Jinzhou with a resolute and altruistic nature and an unbreakable dedication to defending her city and countrymen to her last breath. She is also the appointed Resonator of Sentinel Jué, manifesting in the shape of a LoongDragon, since birth, and with it the responsibility to safeguard Jinzhou's past and guide its future.", "image": "jinhsi" },
-  { "name": "Brant", "description": "He is the captain of the Troupe of Fools, exuding a carefree, easygoing charm and charisma, unbound by convention. However, beneath his flamboyant persona lies a kind heart deeply devoted to ensuring his crew's safety and freedom. He views the world as one of unlimited possibilities and encourages this same optimism in the public through his spectacular performances.", "image": "brant" }
+  {
+    "name": "Rover (Male)",
+    "description": "The male version of the main protagonist.",
+    "image": "mrover"
+  },
+  {
+    "name": "Rover (Female)",
+    "description": "The female version of the main protagonist.",
+    "image": "frover"
+  },
+  {
+    "name": "Chisa",
+    "description": "A conscientious student from the Startorch Academy.",
+    "image": "chisa"
+  },
+  {
+    "name": "Yinlin",
+    "description": "Once an outstanding Patroller who was suspended from her duties at the Public Security Bureau, Yinlin now pursues hidden evils in secrecy.",
+    "image": "yinlin"
+  },
+  {
+    "name": "Calcharo",
+    "description": "He is a former Exile from the New Federation's Lawless Zone and the leader of the Ghost Hounds.",
+    "image": "calcharo"
+  },
+  {
+    "name": "Changli",
+    "description": "She is the Former Secretary-General of the Central Secretariat in Mingting, the capital, and now serves as Counselor to Jinzhou Magistrate, Jinhsi. Having flourished from an unforgiving childhood, she now stands as a calculated, knowledgeable, and mysterious official and strategist with a keen eye for both political and civilian affairs.",
+    "image": "changli"
+  },
+  {
+    "name": "Jinhsi",
+    "description": "She is the young Magistrate of Jinzhou with a resolute and altruistic nature and an unbreakable dedication to defending her city and countrymen to her last breath. She is also the appointed Resonator of Sentinel Jué, manifesting in the shape of a LoongDragon, since birth, and with it the responsibility to safeguard Jinzhou's past and guide its future.",
+    "image": "jinhsi"
+  },
+  {
+    "name": "Brant",
+    "description": "He is the captain of the Troupe of Fools, exuding a carefree, easygoing charm and charisma, unbound by convention. However, beneath his flamboyant persona lies a kind heart deeply devoted to ensuring his crew's safety and freedom. He views the world as one of unlimited possibilities and encourages this same optimism in the public through his spectacular performances.",
+    "image": "brant"
+  },
+   {
+    "name": "Zani",
+    "description": "She is a staff member of the Montelli Family's Averardo Bank in Ragunna. As a serious and reliable Montelli employee, Zani follows a strict routine and manages tasks with ease.",
+    "image": "zani"
+  },
+   {
+    "name": "Galbrena",
+    "description": "Once a Septimontian known as 'Angel', she is now a formidable 'Discord Slayer' who wields the ability to consume the frequencies and powers of Tacet Discords she hunts across Solaris-3, with the aid of the notorious Chimera. Her identity as a 'Fiend of Ever-Burning Flame', a huntress spoken in legend corrupted by the Dark Tide, is now reborn anew with her responsibilities as a Consultant of the Black Shores.",
+    "image": "galbrena"
+  },
+  {
+    "name": "Phoebe",
+    "description": "She is an Acolyte of the Order of the Deep. A young woman of quiet devotion and compassionate, nurturing nature, she upholds the teachings of her faith with unwavering diligence. Raised her entire life as a devout Acolyte, she extends her heartfelt kindness to everyone she meets with her good graces and unquestionable reverence to Sentinel Imperator.",
+    "image": "phoebe"
+  },
+  {
+    "name": "Cartethyia",
+    "description": "Throughout Rinascita, she is revered as Fleurdelys, the 'Blessed Maiden,' and in some accounts, 'The Martyred Maiden.' As a key figure in the region’s history, she holds profound influence, with her connections to the Sentinel Imperator, the Threnodian Leviathan, and the Dark Tide. Her true desires, however, lie in freeing herself from the shackles of her titles and living out her days as a just and righteous wandering knight.",
+    "image": "cartethyia"
+  },
+  {
+    "name": "Aemeath",
+    "description": "She is a Frostlands native from the Roya Tribe who was once a Synchronist at Startorch Academy. She became the Exostrider's Resonator after overclocking in order to resonate with it, causing her to lose her body. She now roams throughout Lahai-Roi as a digital ghost invisible to everyone around her except for Rover, whom she met with during her childhood.",
+    "image": "aemeath"
+  }
 ]
