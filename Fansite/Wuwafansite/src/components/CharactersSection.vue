@@ -26,7 +26,9 @@ const showLess = () => visibleCount.value = 6;
         :key="character.name"
         :name="character.name" 
         :description="character.description" 
-        :image="`/src/assets/CharacterImages/${character.image}.png`" 
+        :image="`/src/assets/characters/${character.image}/icon.png`" 
+        :more="character.more"
+        :character="`/src/assets/characters/${character.image}/full.png`"
       />
 
     </div>

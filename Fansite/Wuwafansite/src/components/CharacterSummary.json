@@ -2,17 +2,20 @@
   {
     "name": "Rover (Male)",
     "description": "The male version of the main protagonist.",
-    "image": "mrover"
+    "image": "mrover",
+    "more": "test35 ja ja"
   },
   {
     "name": "Rover (Female)",
     "description": "The female version of the main protagonist.",
-    "image": "frover"
+    "image": "frover",
+    "more": "test35 ja ja"
   },
   {
     "name": "Chisa",
     "description": "A conscientious student from the Startorch Academy.",
-    "image": "chisa"
+    "image": "chisa",
+    "more": "test35 ja ja"
   },
   {
     "name": "Yinlin",
@@ -63,5 +66,25 @@
     "name": "Aemeath",
     "description": "She is a Frostlands native from the Roya Tribe who was once a Synchronist at Startorch Academy. She became the Exostrider's Resonator after overclocking in order to resonate with it, causing her to lose her body. She now roams throughout Lahai-Roi as a digital ghost invisible to everyone around her except for Rover, whom she met with during her childhood.",
     "image": "aemeath"
+  },
+  {
+    "name": "Iuno",
+    "description": "She is a prodigious and renowned Priestess of Septimont's Tetragon Temple, charged with delivering prophecies that shape the lives of its citizens. While both blessed and cursed with the power to foretell the futures of others, her responsibilities are contrasted by her cocky, outspoken and rebellious attitude, embodying an eagerness to defy all of fate's cruelest machinations.",
+    "image": "iuno"
+  },
+  {
+    "name": "lupa",
+    "description": "She is a gladiator from Septimont, a warrior and undefeated champion of the arena with both an untamed, competitive spirit and an honorable, valiant heart. While indulging in the adrenaline of hard-fought victories, she is also a loyal, prideful protector of her city and upholds its values with everything she holds dear.",
+    "image": "lupa"
+  },
+  {
+    "name": "Ciaccona",
+    "description": "She is a free-spirited, romantic, sincere, and whimsical bard wandering Rinascita in search of inspiration. A passionate musician, poet, and storyteller for both commoners as well as the Divinity, Ciaccona aims to spread her talents, truths, and discoveries of the world around her to all those daring enough to listen.",
+    "image": "ciaccona"
+  },
+  {
+    "name": "Hiyuki",
+    "description": "She is a miko and member of the Special Response Force with a long-standing connection to the Threnodian. Having served as a miko for over a century, Hiyuki derives her most anomalous capabilities from 'Suzu', one of the five Legacy Talismans left behind by the Sentinels, which grants the bearer the ability to perceive and utilize 'certain possibilities' of oneself.",
+    "image": "hiyuki"
   }
 ]
