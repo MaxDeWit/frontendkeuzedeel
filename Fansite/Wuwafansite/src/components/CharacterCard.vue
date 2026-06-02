@@ -32,7 +32,9 @@
             <img :src="character" :alt="name" class="modal-image">
           </div>
           <div class="right-side">
-            <p>{{ more }}</p>
+            <p><strong>Attribute:</strong> <img :src="attributePath" :alt="attributeName" class="AttIcon">{{ attributeName }}</p>
+            <p><strong>Info:</strong> {{ more }}</p>
+            <p><strong>Birthplace:</strong> {{ birthplace }}</p>
           </div>
         </div>
         <div class="modal-footer">
@@ -50,7 +52,10 @@ defineProps({
   description: String,
   image: String,
   more: String,
-  character: String
+  attributePath: String,
+  attributeName: String,
+  character: String,
+  birthplace: String
 })
 
 const showModal = ref(false)
@@ -117,16 +122,20 @@ const showModal = ref(false)
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 1rem;
+  overflow-y: auto;
 }
 
 .modal-content {
   background: white;
   border-radius: 1rem;
   padding: 2rem;
-  max-width: 500px;
-  width: 90%;
+  width: 100%;
+  max-width: 900px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   animation: slideUp 0.3s ease-out;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 @keyframes slideUp {
@@ -146,11 +155,15 @@ const showModal = ref(false)
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
 }
 
 .modal-header h2 {
   margin: 0;
   font-size: 1.5rem;
+  color: #333;
+  font-weight: 700;
 }
 
 .modal-close {
@@ -168,35 +181,133 @@ const showModal = ref(false)
 
 .modal-body {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .left-side {
-  flex: 1;
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
 }
 
 .right-side {
   flex: 1;
+  min-width: 0;
 }
 
 .modal-image {
-  width: 250px;
-  height: 350px;
-  border-radius: 16px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   object-fit: contain;
-  margin-bottom: 1.5rem;
+  margin: 0;
+}
+
+.AttIcon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 .modal-body p {
   color: #555;
   line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.modal-body p strong {
+  color: #333;
+  font-weight: 600;
 }
 
 .modal-footer {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    max-height: 95vh;
+  }
+
+  .modal-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .modal-body {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .left-side {
+    flex: 1 1 100%;
+    width: 100%;
+    min-height: auto;
+    order: -1;
+  }
+
+  .right-side {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .modal-image {
+    max-width: 250px;
+  }
+
+  .modal-body p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .modal-overlay {
+    padding: 0.5rem;
+  }
+
+  .modal-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .modal-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .modal-close {
+    font-size: 1.5rem;
+  }
+
+  .left-side {
+    min-height: auto;
+    order: -1;
+  }
+
+  .modal-image {
+    max-width: 200px;
+  }
+
+  .modal-body p {
+    font-size: 0.9rem;
+  }
+
+  .modal-body {
+    gap: 1rem;
+  }
 }
 </style>

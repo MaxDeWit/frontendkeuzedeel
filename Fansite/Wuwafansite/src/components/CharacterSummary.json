@@ -3,88 +3,137 @@
     "name": "Rover (Male)",
     "description": "The male version of the main protagonist.",
     "image": "mrover",
-    "more": "test35 ja ja"
+    "more": "Awakened with an unknown past by a mysterious entity, Rover is an amnesiac Arbiter from another world who embarks on a journey to uncover the truth to regain their lost memories. As secrets are unveiled, they establish deeper connections with the Solaris-3 and its nations.",
+    "attributes": "Spectro",
+    "Birthplace": "Unknown"
   },
   {
     "name": "Rover (Female)",
     "description": "The female version of the main protagonist.",
     "image": "frover",
-    "more": "test35 ja ja"
+    "more": "Awakened with an unknown past by a mysterious entity, Rover is an amnesiac Arbiter from another world who embarks on a journey to uncover the truth to regain their lost memories. As secrets are unveiled, they establish deeper connections with the Solaris-3 and its nations.",
+    "attributes": "Spectro",
+    "Birthplace": "Unknown"
   },
   {
     "name": "Chisa",
-    "description": "A conscientious student from the Startorch Academy.",
+    "description": "...",
     "image": "chisa",
-    "more": "test35 ja ja"
+    "more": "Chisa is a conscientious, level-headed student from the Startorch Academy. To her, everything can be broken down, analyzed, and resolved, with the exception of human bonding. Bonds can be severed, but this fragility is what makes them precious.",
+    "attributes": "Havoc",
+    "Birthplace": "Ashinohara"
   },
   {
     "name": "Yinlin",
-    "description": "Once an outstanding Patroller who was suspended from her duties at the Public Security Bureau, Yinlin now pursues hidden evils in secrecy.",
-    "image": "yinlin"
+    "description": "...",
+    "image": "yinlin",
+    "more": "Once an outstanding Patroller who was suspended from her duties at the Public Security Bureau, Yinlin now pursues hidden evils in secrecy.",
+    "attributes": "Electro",
+    "Birthplace": "Huanglong"
+    
   },
   {
     "name": "Calcharo",
-    "description": "He is a former Exile from the New Federation's Lawless Zone and the leader of the Ghost Hounds.",
-    "image": "calcharo"
+    "description": "...",
+    "image": "calcharo",
+    "more": "He is a former Exile from the New Federation's Lawless Zone and the leader of the Ghost Hounds.",
+    "attributes": "Electro",
+    "Birthplace": "New Federation"
   },
   {
     "name": "Changli",
-    "description": "She is the Former Secretary-General of the Central Secretariat in Mingting, the capital, and now serves as Counselor to Jinzhou Magistrate, Jinhsi. Having flourished from an unforgiving childhood, she now stands as a calculated, knowledgeable, and mysterious official and strategist with a keen eye for both political and civilian affairs.",
-    "image": "changli"
+    "description": "...",
+    "image": "changli",
+    "more": "She is the Former Secretary-General of the Central Secretariat in Mingting, the capital, and now serves as Counselor to Jinzhou Magistrate, Jinhsi. Having flourished from an unforgiving childhood, she now stands as a calculated, knowledgeable, and mysterious official and strategist with a keen eye for both political and civilian affairs.",
+    "attributes": "Fusion",
+    "Birthplace": "Huanglong"
   },
   {
     "name": "Jinhsi",
-    "description": "She is the young Magistrate of Jinzhou with a resolute and altruistic nature and an unbreakable dedication to defending her city and countrymen to her last breath. She is also the appointed Resonator of Sentinel Jué, manifesting in the shape of a LoongDragon, since birth, and with it the responsibility to safeguard Jinzhou's past and guide its future.",
-    "image": "jinhsi"
+    "description": "...",
+    "image": "jinhsi",
+    "more": "She is the young Magistrate of Jinzhou with a resolute and altruistic nature and an unbreakable dedication to defending her city and countrymen to her last breath. She is also the appointed Resonator of Sentinel Jué, manifesting in the shape of a LoongDragon, since birth, and with it the responsibility to safeguard Jinzhou's past and guide its future.",
+    "attributes": "Spectro",
+    "Birthplace": "Huanglong"
   },
   {
     "name": "Brant",
-    "description": "He is the captain of the Troupe of Fools, exuding a carefree, easygoing charm and charisma, unbound by convention. However, beneath his flamboyant persona lies a kind heart deeply devoted to ensuring his crew's safety and freedom. He views the world as one of unlimited possibilities and encourages this same optimism in the public through his spectacular performances.",
-    "image": "brant"
+    "description": "...",
+    "image": "brant",
+    "more": "He is the captain of the Troupe of Fools, exuding a carefree, easygoing charm and charisma, unbound by convention. However, beneath his flamboyant persona lies a kind heart deeply devoted to ensuring his crew's safety and freedom. He views the world as one of unlimited possibilities and encourages this same optimism in the public through his spectacular performances.",
+    "attributes": "Fusion",
+    "Birthplace": "Rinascita"
   },
    {
     "name": "Zani",
-    "description": "She is a staff member of the Montelli Family's Averardo Bank in Ragunna. As a serious and reliable Montelli employee, Zani follows a strict routine and manages tasks with ease.",
-    "image": "zani"
+    "description": "...",
+    "image": "zani",
+    "more": "She is a staff member of the Montelli Family's Averardo Bank in Ragunna. As a serious and reliable Montelli employee, Zani follows a strict routine and manages tasks with ease. For years, she has clocked in on time without fail, finding as much enjoyment in her well-ordered life as in her carefully planned moments of leisure.",
+    "attributes": "Spectro",
+    "Birthplace": "Rinascita"
   },
    {
     "name": "Galbrena",
-    "description": "Once a Septimontian known as 'Angel', she is now a formidable 'Discord Slayer' who wields the ability to consume the frequencies and powers of Tacet Discords she hunts across Solaris-3, with the aid of the notorious Chimera. Her identity as a 'Fiend of Ever-Burning Flame', a huntress spoken in legend corrupted by the Dark Tide, is now reborn anew with her responsibilities as a Consultant of the Black Shores.",
-    "image": "galbrena"
+    "description": "...",
+    "image": "galbrena",
+    "more": "Once a Septimontian known as 'Angel', she is now a formidable 'Discord Slayer' who wields the ability to consume the frequencies and powers of Tacet Discords she hunts across Solaris-3, with the aid of the notorious Chimera. Her identity as a 'Fiend of Ever-Burning Flame', a huntress spoken in legend corrupted by the Dark Tide, is now reborn anew with her responsibilities as a Consultant of the Black Shores.",
+    "attributes": "Fusion",
+    "Birthplace": "Rinascita"
   },
   {
     "name": "Phoebe",
-    "description": "She is an Acolyte of the Order of the Deep. A young woman of quiet devotion and compassionate, nurturing nature, she upholds the teachings of her faith with unwavering diligence. Raised her entire life as a devout Acolyte, she extends her heartfelt kindness to everyone she meets with her good graces and unquestionable reverence to Sentinel Imperator.",
-    "image": "phoebe"
+    "description": "...",
+    "image": "phoebe",
+    "more": "She is an Acolyte of the Order of the Deep. A young woman of quiet devotion and compassionate, nurturing nature, she upholds the teachings of her faith with unwavering diligence. Raised her entire life as a devout Acolyte, she extends her heartfelt kindness to everyone she meets with her good graces and unquestionable reverence to Sentinel Imperator.",
+    "attributes": "Spectro",
+    "Birthplace": "Rinascita"    
   },
   {
     "name": "Cartethyia",
-    "description": "Throughout Rinascita, she is revered as Fleurdelys, the 'Blessed Maiden,' and in some accounts, 'The Martyred Maiden.' As a key figure in the region’s history, she holds profound influence, with her connections to the Sentinel Imperator, the Threnodian Leviathan, and the Dark Tide. Her true desires, however, lie in freeing herself from the shackles of her titles and living out her days as a just and righteous wandering knight.",
-    "image": "cartethyia"
+    "description": "...",
+    "image": "cartethyia",
+    "more": "Throughout Rinascita, she is revered as Fleurdelys, the 'Blessed Maiden,' and in some accounts, 'The Martyred Maiden.' As a key figure in the region’s history, she holds profound influence, with her connections to the Sentinel Imperator, the Threnodian Leviathan, and the Dark Tide. Her true desires, however, lie in freeing herself from the shackles of her titles and living out her days as a just and righteous wandering knight",
+    "attributes": "Aero",
+    "Birthplace": "Rinascita"
   },
   {
     "name": "Aemeath",
-    "description": "She is a Frostlands native from the Roya Tribe who was once a Synchronist at Startorch Academy. She became the Exostrider's Resonator after overclocking in order to resonate with it, causing her to lose her body. She now roams throughout Lahai-Roi as a digital ghost invisible to everyone around her except for Rover, whom she met with during her childhood.",
-    "image": "aemeath"
+    "description": "...",
+    "image": "aemeath",
+    "more": "She is a Frostlands native from the Roya Tribe who was once a Synchronist at Startorch Academy. She became the Exostrider's Resonator after overclocking in order to resonate with it, causing her to lose her body. She now roams throughout Lahai-Roi as a digital ghost invisible to everyone around her except for Rover, whom she met with during her childhood",
+    "attributes": "Fusion",
+    "Birthplace": "Frostlands"
   },
   {
     "name": "Iuno",
-    "description": "She is a prodigious and renowned Priestess of Septimont's Tetragon Temple, charged with delivering prophecies that shape the lives of its citizens. While both blessed and cursed with the power to foretell the futures of others, her responsibilities are contrasted by her cocky, outspoken and rebellious attitude, embodying an eagerness to defy all of fate's cruelest machinations.",
-    "image": "iuno"
+    "description": "...",
+    "image": "iuno",
+    "more": "She is a prodigious and renowned Priestess of Septimont's Tetragon Temple, charged with delivering prophecies that shape the lives of its citizens. While both blessed and cursed with the power to foretell the futures of others, her responsibilities are contrasted by her cocky, outspoken and rebellious attitude, embodying an eagerness to defy all of fate's cruelest machinations",
+    "attributes": "Aero",
+    "Birthplace": "Rinascita"
   },
   {
     "name": "lupa",
-    "description": "She is a gladiator from Septimont, a warrior and undefeated champion of the arena with both an untamed, competitive spirit and an honorable, valiant heart. While indulging in the adrenaline of hard-fought victories, she is also a loyal, prideful protector of her city and upholds its values with everything she holds dear.",
-    "image": "lupa"
+    "description": "...",
+    "image": "lupa",
+    "more": "She is a gladiator from Septimont, a warrior and undefeated champion of the arena with both an untamed, competitive spirit and an honorable, valiant heart. While indulging in the adrenaline of hard-fought victories, she is also a loyal, prideful protector of her city and upholds its values with everything she holds dear",
+    "attributes": "Fusion",
+    "Birthplace": "Rinascita"
   },
   {
     "name": "Ciaccona",
-    "description": "She is a free-spirited, romantic, sincere, and whimsical bard wandering Rinascita in search of inspiration. A passionate musician, poet, and storyteller for both commoners as well as the Divinity, Ciaccona aims to spread her talents, truths, and discoveries of the world around her to all those daring enough to listen.",
-    "image": "ciaccona"
+    "description": "...",
+    "image": "ciaccona",
+    "more": "She is a free-spirited, romantic, sincere, and whimsical bard wandering Rinascita in search of inspiration. A passionate musician, poet, and storyteller for both commoners as well as the Divinity, Ciaccona aims to spread her talents, truths, and discoveries of the world around her to all those daring enough to listen",
+    "attributes": "Aero",
+    "Birthplace": "Rinascita"
   },
   {
     "name": "Hiyuki",
-    "description": "She is a miko and member of the Special Response Force with a long-standing connection to the Threnodian. Having served as a miko for over a century, Hiyuki derives her most anomalous capabilities from 'Suzu', one of the five Legacy Talismans left behind by the Sentinels, which grants the bearer the ability to perceive and utilize 'certain possibilities' of oneself.",
-    "image": "hiyuki"
+    "description": "...",
+    "image": "hiyuki",
+    "more": "She is a miko and member of the Special Response Force with a long-standing connection to the Threnodian. Having served as a miko for over a century, Hiyuki derives her most anomalous capabilities from 'Suzu', one of the five Legacy Talismans left behind by the Sentinels, which grants the bearer the ability to perceive and utilize 'certain possibilities' of oneself",
+    "attributes": "Glacio",
+    "Birthplace": "Ashinohara"
   }
 ]
