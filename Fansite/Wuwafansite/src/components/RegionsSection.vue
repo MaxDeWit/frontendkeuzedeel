@@ -1,7 +1,41 @@
+<script setup>
+import { ref, computed } from 'vue'
+import RegionCard from './RegionCard.vue'
+import RegionSummary from './RegionSummary.json'
+
+const visibleCount = ref(6)
+const visibleRegions = computed(() => RegionSummary.slice(0, visibleCount.value))
+
+const showMore = () => visibleCount.value += 6;
+
+
+const showLess = () => visibleCount.value = 6;
+
+</script>
+
 <template>
   <section id="regions" class="section">
-    <h2>Regions</h2>
-    <p>Dit is de regions pagina.</p>
+    <div class="title">
+      <h2>Regions</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+      <RegionCard 
+        v-for="region in visibleRegions"
+        :key="region.name"
+        :name="region.name" 
+        :image="`/src/assets/RegionImages/${region.image}.png`" 
+      />
+
+    </div>
+    <div class="see-more-container">
+      <button v-if="visibleCount < RegionSummary.length" class="btn btn-primary mt-4" @click="showMore">
+        See More Regions
+      </button>
+      <button v-if="visibleCount > 6" class="btn btn-outline-primary mt-4 ms-2" @click="showLess">
+        Show Less
+      </button>
+    </div>
   </section>
 </template>
 

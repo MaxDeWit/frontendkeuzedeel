@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
-import CharacterCard from '/src/components/CharacterCard.vue'
+import CharacterCard from './CharacterCard.vue'
 
 import CharacterSummary from './CharacterSummary.json'
 
