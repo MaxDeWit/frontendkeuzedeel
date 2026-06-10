@@ -8,12 +8,31 @@
       <a href="#regions">Regions</a>
       <a href="#about">About</a>
     </div>
+
+    <button class="menu-toggle" @click="showMenu = !showMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div v-if="showMenu" class="mobile-menu">
+      <a href="#home" @click="showMenu = false">Home</a>
+      <a href="#characters" @click="showMenu = false">Characters</a>
+      <a href="#regions" @click="showMenu = false">Regions</a>
+      <a href="#about" @click="showMenu = false">About</a>
+    </div>
   </nav>
 
   <main>
     <router-view />
   </main>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const showMenu = ref(false)
+</script>
 
 <style scoped>
 .navbar {
@@ -85,27 +104,79 @@ main {
   padding: 0;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.4rem;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(23, 23, 23);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     padding: 1rem 0.5rem;
     gap: 1rem;
+    position: relative;
   }
 
   .navbar .logo {
     font-size: 2rem;
     padding-left: 0.5rem;
+    flex: 1;
   }
 
-  .navbar .navitems {
-    padding-right: 0.5rem;
-    justify-content: center;
-    width: 100%;
+  .navitems {
+    display: none !important;
   }
 
-  .navbar a {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+  .menu-toggle {
+    display: flex;
+    order: 3;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #b5b3b3;
+    padding: 0.5rem;
+    gap: 0;
+    border-top: 1px solid #999;
+  }
+
+  .mobile-menu a {
+    color: rgb(79, 77, 77);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #999;
+    transition: background-color 0.2s;
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu a:hover {
+    background-color: #a5a3a3;
   }
 }
 
@@ -119,13 +190,9 @@ main {
     font-size: 1.5rem;
   }
 
-  .navbar .navitems {
-    gap: 0.5rem;
-  }
-
-  .navbar a {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.6rem;
+  .mobile-menu a {
+    padding: 0.8rem;
+    font-size: 1rem;
   }
 }
 </style>

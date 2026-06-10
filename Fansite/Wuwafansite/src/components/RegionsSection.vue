@@ -1,15 +1,29 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import RegionCard from './RegionCard.vue'
 import RegionSummary from './RegionSummary.json'
 
 const visibleCount = ref(6)
+
+const updateVisibleCount = () => {
+  visibleCount.value = window.innerWidth < 768 ? 3 : 6
+}
+
+onMounted(() => {
+  updateVisibleCount()
+  window.addEventListener('resize', updateVisibleCount)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', updateVisibleCount)
+})
+
 const visibleRegions = computed(() => RegionSummary.slice(0, visibleCount.value))
 
 const showMore = () => visibleCount.value += 6;
 
 
-const showLess = () => visibleCount.value = 6;
+const showLess = () => visibleCount.value = window.innerWidth < 768 ? 3 : 6;
 
 </script>
 
@@ -18,7 +32,7 @@ const showLess = () => visibleCount.value = 6;
     <div class="title">
       <h2>Regions</h2>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+    <div class="row row-cols-1 row-cols-lg-3 g-4">
 
       <RegionCard 
         v-for="region in visibleRegions"

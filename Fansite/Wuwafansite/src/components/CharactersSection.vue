@@ -1,16 +1,30 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import CharacterCard from './CharacterCard.vue'
 
 import CharacterSummary from './CharacterSummary.json'
 
 const visibleCount = ref(6)
+
+const updateVisibleCount = () => {
+  visibleCount.value = window.innerWidth < 768 ? 3 : 6
+}
+
+onMounted(() => {
+  updateVisibleCount()
+  window.addEventListener('resize', updateVisibleCount)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', updateVisibleCount)
+})
+
 const visibleCharacters = computed(() => CharacterSummary.slice(0, visibleCount.value))
 
 const showMore = () => visibleCount.value += 6;
 
 
-const showLess = () => visibleCount.value = 6;
+const showLess = () => visibleCount.value = window.innerWidth < 768 ? 3 : 6;
 
 </script>
 
@@ -19,7 +33,7 @@ const showLess = () => visibleCount.value = 6;
     <div class="title">
       <h2>Characters</h2>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+    <div class="row row-cols-1 row-cols-lg-3 g-4">
 
       <CharacterCard 
         v-for="character in visibleCharacters" 

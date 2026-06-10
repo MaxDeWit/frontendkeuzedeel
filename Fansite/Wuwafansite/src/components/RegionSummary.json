@@ -2,5 +2,49 @@
   {
     "name": "Desorock Highlands",
     "image": "1"
+  },
+  {
+    "name": "Black Shores Archipelago",
+    "image": "2"
+  },
+  {
+    "name": "Avinoleum",
+    "image": "3"
+  },
+  {
+    "name": "Nimbus Sanctum",
+    "image": "4"
+  },
+  {
+    "name": "Ragunna City",
+    "image": "5"
+  },
+  {
+    "name": "Riccioli Islands",
+    "image": "6"
+  },
+  {
+    "name": "Stagnant Run",
+    "image": "7"
+  },
+  {
+    "name": "Thessaleo Fells",
+    "image": "8"
+  },
+  {
+    "name": "Startorch Academy",
+    "image": "9"
+  },
+  {
+    "name": "Etching Plains",
+    "image": "10"
+  },
+  {
+    "name": "Giant's Gaze",
+    "image": "11"
+  },
+  {
+    "name": "Rebirth Uplands",
+    "image": "12"
   }
 ]

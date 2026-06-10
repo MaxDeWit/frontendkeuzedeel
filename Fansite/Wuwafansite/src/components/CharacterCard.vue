@@ -198,6 +198,29 @@ const showModal = ref(false)
   min-width: 0;
 }
 
+@media (max-width: 768px) {
+  .frame-title {
+    font-size: 1.1rem;
+  }
+
+  .frame-text {
+    font-size: 0.95rem;
+  }
+
+  .modal-body {
+    gap: 1.5rem;
+  }
+
+  .left-side {
+    flex: 0 0 200px;
+    min-height: 200px;
+  }
+
+  .right-side p {
+    font-size: 0.95rem;
+  }
+}
+
 .modal-image {
   width: 100%;
   max-width: 300px;
