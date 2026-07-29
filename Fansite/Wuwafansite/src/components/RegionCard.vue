@@ -10,9 +10,9 @@
           {{ name }}
         </h5>
 
-        <p class="frame-text flex-grow-1">
+        <!-- <p class="frame-text flex-grow-1">
           {{ description }}
-        </p>
+        </p> -->
 
         <button @click="showModal = true" class="btn btn-outline-primary mt-3">
           More Info
@@ -32,7 +32,7 @@
             <img :src="image" :alt="regionname" class="sidebar-image">
           </div>
           <div class="bottom-side">
-            <p><strong>Description:</strong> {{ more }}</p>
+            <p><strong>Description:</strong> {{ description }}</p>
           </div>
         </div>
         <div class="modal-footer">
@@ -49,7 +49,6 @@ defineProps({
   name: String,
   image: String,
   description: String,
-  more: String,
   regionname: String,
 })
 

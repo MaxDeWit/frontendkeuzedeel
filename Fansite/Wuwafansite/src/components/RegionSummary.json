@@ -1,50 +1,62 @@
 [
   {
     "name": "Desorock Highlands",
-    "image": "1"
+    "image": "1",
+    "description": "Desorock Highland, once a fertile river valley, was the source of many streams that nourished the lands downstream. After the onset of the Waveworn Phenomenon, abnormal weather patterns drained most of these water sources, leaving the lake area dry and giving rise to Tacet Fields and TDs."
   },
   {
     "name": "Black Shores Archipelago",
-    "image": "2"
+    "image": "2",
+    "description": "An archipelago shrouded in the Stormy Sea of Solaris. Formed from Tacetites, these isles constantly emanate Remnant Energy, casting an eerie \"mist\" that envelopes the region."
   },
   {
     "name": "Avinoleum",
-    "image": "3"
+    "image": "3",
+    "description": "Avinoleum is a Region located in Rinascita. A seminary faintly visible through a thin veil of clouds. Suspended upside down in the sky, it stands solemn and silent, as though carrying the weight of the Blessed Maiden's life."
   },
   {
     "name": "Nimbus Sanctum",
-    "image": "4"
+    "image": "4",
+    "description": "Nimbus Sanctum is a Region located in Rinascita. The sea of clouds lingering in this place is formed by concentrated Remnant Energy. Local legends of Ragunna speak of a serene, mirror-like area at the heart of Nimbus Sanctum, said to purify the darkest of thoughts and transform them into part of the clouds. At times, a haunting melody can be heard echoing from the depths of the sanctum."
   },
   {
     "name": "Ragunna City",
-    "image": "5"
+    "image": "5",
+    "description": "Ragunna City is a Region located in Rinascita. Ragunna City, the administrative center of the Ragunna city-state in Rinascita, is a thriving port city by the sea, its districts linked by winding waterways. It is also the city with the strongest link to the Sentinel, thus the Ragunnesi are devout followers of the Sentinel, Imperator, and believe Common Echoes to be gifts from the Sentinel carrying Their divine will."
   },
   {
     "name": "Riccioli Islands",
-    "image": "6"
+    "image": "6",
+    "description": "The Riccioli Islands is a Region located in Rinascita. It is a group of islands northwest of Ragunna, rich in various marine resources. Falling out of the governance of the Order of the Deep, these islands have preserved the customs from Rinascita's Age of a Thousand Islands era, setting them apart from the rest of Ragunna in lifestyle. However, rumor has it a great mystery lies hidden within this secluded paradise..."
   },
   {
     "name": "Stagnant Run",
-    "image": "7"
+    "image": "7",
+    "description": "Stagnant Run is a Region located in Roya Frostlands."
   },
   {
     "name": "Thessaleo Fells",
-    "image": "8"
+    "image": "8",
+    "description": "Thessaleo Fells is a Region located in Rinascita. The rugged mountains of Thessaleo Fells always seem shrouded in the darkness of night, their gloom as deep as the abyssal sea. Once the domain of the Fisalia Family, the oldest lineage in Ragunna, this desolate place remains one few outsiders dare to tread."
   },
   {
     "name": "Startorch Academy",
-    "image": "9"
+    "image": "9",
+    "description": "Startorch Academy is a multinational school built by the Spacetrek Collective specifically for Resonators in Lahai-Roi. It is known to contain the Exo Genesis Labs, Voidwatch Tower, Tactical Proving Grounds, and Simulator Cockpit. Its name comes from the phrase \"Let Knowledge Be Your Guiding Star, Raise High the Torch of Tomorrow\"."
   },
   {
     "name": "Etching Plains",
-    "image": "10"
+    "image": "10",
+    "description": "Etching Plains is a Region located in Roya Frostlands."
   },
   {
     "name": "Giant's Gaze",
-    "image": "11"
+    "image": "11",
+    "description": "Giant's Gaze is a Region located in Roya Frostlands."
   },
   {
     "name": "Rebirth Uplands",
-    "image": "12"
+    "image": "12",
+    "description": "Rebirth Uplands is a Region located in Roya Frostlands."
   }
 ]

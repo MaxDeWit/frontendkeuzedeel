@@ -38,6 +38,7 @@ const showLess = () => visibleCount.value = window.innerWidth < 768 ? 3 : 6;
         v-for="region in visibleRegions"
         :key="region.name"
         :name="region.name" 
+        :description="region.description"
         :image="`/src/assets/RegionImages/${region.image}.png`" 
       />
 
