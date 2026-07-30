@@ -5,19 +5,43 @@
 
   <div class="about-wuwa" :style="Style">
     <div class="overlay">
+
       <div class="overlay-content">
+
+        <div class="corner top-left"></div>
+        <div class="corner top-right"></div>
+        <div class="corner bottom-left"></div>
+        <div class="corner bottom-right"></div>
+
         <slot name="about-overlay">
-          <h3 class="title">About Wuthering Waves</h3>
-          <p class="text">...
+
+          <h3 class="title">
+            About Wuthering Waves
+          </h3>
+
+          <img
+            class="caption-image"
+            :src="captionImage"
+            alt="Decoration"
+          />
+
+          <p class="text">
+            Wuthering Waves is a story-rich open-world action RPG with a high
+            degree of freedom. You wake from your slumber as Rover, joined by a
+            vibrant cast of Resonators on a journey to reclaim your lost
+            memories and surmount the Lament.
           </p>
         </slot>
+
       </div>
+
     </div>
   </div>
 </template>
 
 <script>
 import wuwabg from "../assets/wuwabg.png";
+import koptext from "../assets/Koptext.png";
 
 export default {
   name: "AboutSection",
@@ -27,143 +51,224 @@ export default {
         backgroundImage: `url(${wuwabg})`,
       };
     },
+    captionImage() {
+      return koptext;
+    },
   },
 };
 </script>
 
 <style scoped>
 
-.section {
-  padding: 3rem 2rem;
-  border-bottom: none;
-  max-width: 100%;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+.section{
+    padding:3rem 2rem;
+    border-bottom:none;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
+h2{
+    font-size:2rem;
+    color:#333;
+    margin-bottom:1rem;
 }
 
-p {
-  color: #666;
-  font-size: 1.1rem;
-  line-height: 1.6;
+.about-wuwa{
+    position:relative;
+    width:100vw;
+    left:50%;
+    transform:translateX(-50%);
+    min-height:65vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:4rem 2rem;
+    overflow:hidden;
 }
 
-.about-wuwa {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  max-width: 100vw;
-  min-height: 60vh;
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 2rem;
-  box-sizing: border-box;
-  overflow: hidden;
+.overlay{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.about-wuwa .overlay {
-  --overlay-color: rgba(0, 0, 0, 0.35); 
-  width: 100%;
-  background: transparent; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+.overlay-content{
+    position:relative;
+    width:100%;
+    max-width:900px;
+    padding:70px 60px;
+    text-align:center;
+    color:white;
+    background:
+    linear-gradient(
+        180deg,
+        rgba(255,255,255,.03),
+        rgba(0,0,0,.42)
+    ),
+    rgba(18,18,18,.45);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:
+    0 0 40px rgba(0,0,0,.35),
+    inset 0 0 0 1px rgba(255,255,255,.05);
 }
 
-.overlay-content {
-  color: #fff;
-  text-align: center;
-  max-width: 1000px;
-  width: 100%;
-  padding: 1rem 2rem;
-  background: rgba(0,0,0,0.38);
-  border-radius: 4px;
+.title{
+    font-family:"Cinzel", serif;
+    font-size:3.2rem;
+    font-weight:500;
+    letter-spacing:.5px;
+    margin-bottom:18px;
+    color:white;
 }
 
-.title {
-  font-size: 2rem;
-  margin: 0 0 0.5rem 0;
+.caption-image{
+    display:block;
+    width:150px;
+    margin:0 auto 30px auto;
+    opacity:.9;
 }
 
-.text {
-  font-size: 1.125rem;
-  margin: 0;
-  opacity: 0.95;
+.text{
+    max-width:720px;
+    margin:auto;
+    line-height:1.9;
+    font-size:1.15rem;
+    color:rgba(255,255,255,.92);
 }
 
-@media (max-width: 1024px) {
-  .about-wuwa {
-    height: 50vh;
-    min-height: 260px;
-  }
-
-  .title {
-    font-size: 1.6rem;
-  }
-
-  .text {
-    font-size: 1rem;
-  }
+.corner{
+    position:absolute;
+    width:32px;
+    height:32px;
+    pointer-events:none;
 }
 
-@media (max-width: 768px) {
-  .section {
-    padding: 2rem 1rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.8rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .about-wuwa {
-    height: 40vh;
-    min-height: 220px;
-  }
-
-  .overlay-content {
-    padding: 0.75rem 1rem;
-  }
+.corner::before,
+.corner::after{
+    content:"";
+    position:absolute;
+    background:rgba(255,255,255,.45);
+    transition:.3s;
 }
 
-@media (max-width: 480px) {
-  .section {
-    padding: 1.5rem 1rem;
-  }
+.corner::before{
+    width:32px;
+    height:1px;
+}
 
-  h2 {
-    font-size: 1.3rem;
-  }
+.corner::after{
+    width:1px;
+    height:32px;
+}
 
-  p {
-    font-size: 0.95rem;
-  }
+.top-left{
+    top:18px;
+    left:18px;
+}
 
-  .about-wuwa {
-    height: 30vh;
-    min-height: 160px;
-  }
+.top-right{
+    top:18px;
+    right:18px;
+    transform:rotate(90deg);
+}
 
-  .title {
-    font-size: 1.2rem;
-  }
+.bottom-right{
+    bottom:18px;
+    right:18px;
+    transform:rotate(180deg);
+}
 
-  .text {
-    font-size: 0.95rem;
-  }
+.bottom-left{
+    bottom:18px;
+    left:18px;
+    transform:rotate(270deg);
+}
+
+.overlay-content{
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.overlay-content:hover{
+    transform:translateY(-4px);
+    border-color:rgba(255,255,255,.35);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.45),
+        inset 0 0 0 1px rgba(255,255,255,.08);
+}
+
+.overlay-content:hover .corner::before,
+.overlay-content:hover .corner::after{
+
+    background:rgba(255,255,255,.75);
+
+}
+
+.about-wuwa::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.35)
+    );
+    pointer-events:none;
+}
+
+@media(max-width:1024px){
+    .overlay-content{
+        padding:55px 40px;
+    }
+    .title{
+        font-size:2.5rem;
+    }
+}
+
+@media(max-width:768px){
+    .about-wuwa{
+        padding:2rem 1rem;
+        min-height:55vh;
+    }
+    .overlay-content{
+        padding:40px 25px;
+    }
+    .title{
+        font-size:2rem;
+    }
+    .caption-image{
+        width:120px;
+    }
+    .text{
+        font-size:1rem;
+        line-height:1.7;
+    }
+    .explore-btn{
+        padding:12px 24px;
+    }
+}
+
+@media(max-width:480px){
+    .overlay-content{
+        padding:30px 20px;
+    }
+    .title{
+        font-size:1.6rem;
+    }
+    .caption-image{
+        width:90px;
+    }
+    .text{
+        font-size:.95rem;
+    }
 }
 </style>
