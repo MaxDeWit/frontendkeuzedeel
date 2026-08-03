@@ -1,3 +1,5 @@
+<!-- test merge -->
+
 <template>
   <footer class="site-footer">
     <div class="footer-top">
