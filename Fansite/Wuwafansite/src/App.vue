@@ -26,10 +26,13 @@
   <main>
     <router-view />
   </main>
+
+  <Footer />
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import Footer from './components/Footer.vue'
 
 const showMenu = ref(false)
 </script>
