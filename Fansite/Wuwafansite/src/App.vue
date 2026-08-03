@@ -39,7 +39,7 @@ const showMenu = ref(false)
 
 <style scoped>
 .navbar {
-  background-color: #c5c3c3;
+  background: linear-gradient(135deg, #007bff, #6610f2);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -51,14 +51,17 @@ const showMenu = ref(false)
 }
 
 .navbar .logo {
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: rgb(23, 23, 23);
+  font-family: 'Cinzel', serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  color: #E8ECFF;
   padding-left: 1rem;
   flex-shrink: 0;
 }
 
 .navbar .navitems {
+  font-family: 'Cinzel', serif;
   display: flex;
   gap: 1rem;
   padding-right: 3rem;
@@ -67,7 +70,7 @@ const showMenu = ref(false)
 }
 
 .navbar a {
-  color: rgb(79, 77, 77);
+  color: #E8ECFF;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -84,7 +87,7 @@ const showMenu = ref(false)
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: rgb(68, 67, 67);
+  background-color: rgb(245, 243, 243);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -98,7 +101,7 @@ const showMenu = ref(false)
 } */
 
 .navbar a:hover {
-  background-color: #555;
+  background-color: #4b3383;
 }
 
 main {
