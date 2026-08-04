@@ -116,6 +116,7 @@ const showModal = ref(false)
 }
 
 .modal-overlay {
+  font-family: 'Poppins', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
