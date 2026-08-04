@@ -62,6 +62,7 @@ const showModal = ref(false)
 </script>
 
 <style scope>
+
 .character-image {
   width: 16vh;
   height: 16vh;
@@ -70,6 +71,7 @@ const showModal = ref(false)
 }
 
 .frame {
+  font-family: 'Poppins', sans-serif;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 1rem;
   background: #fff;
@@ -95,12 +97,14 @@ const showModal = ref(false)
 }
 
 .frame-title {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .frame-text {
+  font-family: 'Poppins', sans-serif;
   color: #555;
   height: 4rem;
   overflow-y: auto;

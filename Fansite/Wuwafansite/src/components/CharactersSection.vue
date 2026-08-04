@@ -31,7 +31,7 @@ const showLess = () => visibleCount.value = window.innerWidth < 768 ? 3 : 6;
 <template>
   <section id="characters" class="section">
     <div class="title">
-      <h2>Characters</h2>
+      <h2>characters</h2>
     </div>
     <div class="row row-cols-1 row-cols-lg-3 g-4">
 
@@ -69,6 +69,8 @@ const showLess = () => visibleCount.value = window.innerWidth < 768 ? 3 : 6;
 }
 
 .title {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -83,6 +85,7 @@ p {
 }
 
 .see-more-container {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
 }

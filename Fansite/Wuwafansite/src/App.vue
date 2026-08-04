@@ -61,7 +61,7 @@ const showMenu = ref(false)
 }
 
 .navbar .navitems {
-  font-family: 'Cinzel', serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   gap: 1rem;
   padding-right: 3rem;

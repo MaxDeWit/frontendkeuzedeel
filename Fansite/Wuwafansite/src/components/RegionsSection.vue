@@ -30,7 +30,7 @@ const showLess = () => visibleCount.value = window.innerWidth < 768 ? 3 : 6;
 <template>
   <section id="regions" class="section">
     <div class="title">
-      <h2>Regions</h2>
+      <h2>regions</h2>
     </div>
     <div class="row row-cols-1 row-cols-lg-3 g-4">
 
@@ -55,6 +55,13 @@ const showLess = () => visibleCount.value = window.innerWidth < 768 ? 3 : 6;
 </template>
 
 <style scoped>
+.title {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 .section {
   padding: 3rem 2rem;
   border-bottom: 1px solid #eee;

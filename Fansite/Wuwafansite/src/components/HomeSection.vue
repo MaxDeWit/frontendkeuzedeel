@@ -64,6 +64,7 @@ export default {
 }
 
 .carousel-inner {
+  font-family: 'Poppins', sans-serif;
   min-height: 320px;
   overflow: hidden;
   background-color: rgb(53, 53, 54);

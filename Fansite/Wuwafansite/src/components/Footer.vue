@@ -33,6 +33,7 @@
 
 <style scoped>
 .site-footer {
+  font-family: 'Poppins', sans-serif;
   background-color: #4f4f4f;
   color: #f0f0f0;
   padding: 2rem 2.5rem 1.5rem;

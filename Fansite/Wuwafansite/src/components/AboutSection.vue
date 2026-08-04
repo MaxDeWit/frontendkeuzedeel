@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="section">
-    <h2>About</h2>
+    <h2>about</h2>
   </section>
 
   <div class="about-wuwa" :style="Style">
@@ -68,6 +68,8 @@ export default {
 }
 
 h2{
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
     font-size:2rem;
     color:#333;
     margin-bottom:1rem;
@@ -136,6 +138,7 @@ h2{
 }
 
 .text{
+    font-family: 'Poppins', sans-serif;
     max-width:720px;
     margin:auto;
     line-height:1.9;
